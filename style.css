@@ -1,0 +1,185 @@
+a {
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    font-family: 'Catamaran', sans-serif;
+}
+
+body * {
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+}
+#top-section {
+    background: linear-gradient(to right, salmon, purple);
+    position: relative; /* sötétítőhöz */
+    overflow: hidden; /* sötétítőhöz */
+}
+.navbar {
+    font-family: 'Catamaran', sans-serif;
+    background: white;
+    border: none;
+    border-radius: 0;
+}
+
+#top-section li>a:hover {
+    opacity: 1;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        background: transparent;
+        border: none;
+    }
+    #top-section .navbar a {
+        color: white;
+        opacity: 0.8;
+    }
+    #top-section a.navbar-brand:hover {
+        color: white;
+        opacity: 1;
+    }
+    #top-section .col-md-4:first-of-type {
+        margin-top: 100px;
+        padding: 0;
+    }
+}
+
+#top-section .col-md-4 {
+    padding: 10px 70px;
+}
+
+#top-section a.navbar-brand {
+    color: rgba(255, 188, 5, 0.9);
+}
+
+a#start-now, a#get-started {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 25px;
+    margin: 40px, 20px;
+    transition: .3s;
+}
+a#start-now:hover, a#get-started:hover  {
+    background:  rgba(255, 188, 5, 0.9);
+    border: rgba(255, 188, 5, 0.9);
+}
+
+#top-section img, #third img {
+    height: 330px;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+#top-section::after {
+    content: '';
+    display: table;
+    background: url('./img/bg-pattern.png') repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#top-section * {  /* sötétítőhöz */
+    z-index: 1000;
+}
+
+#top-section .container div {
+   text-align: center;
+}
+
+#top-section p{
+    color: white;
+}
+
+/*-----------------------------*/
+
+#second.yellow {
+    background-color: rgb(255, 201, 52)
+}
+#second .download1 {
+    width:200px;
+    height: 80px;
+}
+
+#second .row {
+    padding: 50px 50px;
+}
+
+
+/*#icon1::before {
+    content: "\e010";
+}*/
+
+#third .row {
+    padding: 50px 40px;
+}
+#third img {
+    padding-top: 20px;
+}
+
+#iconDivs div {
+    padding-top: 40px;
+}
+#iconDivs i {
+    color:purple;
+}
+
+@media (min-width: 992px) {
+    #third .row {
+        padding: 50px 0px;
+    }
+
+}
+
+#fourth  {
+    background-image: url('./img/bg-cta.jpg') ;
+    background-size: cover;
+    padding: 280px 30px;
+    box-shadow: inset 0 0 0 4096px rgba(0,0,0,0.4);
+}
+
+#fourth h2 {
+    color: white;
+}
+
+
+#fifth{
+    padding: 50px 40px;
+   background-color: rgb(255, 201, 52);
+}
+#fifth a {
+    font-size: 60px;
+    margin: 10px;
+    opacity: 0.9;
+}
+
+#fifth a:hover{
+    opacity: 1;
+}
+
+#fifth a:nth-of-type(2) {
+color: rgb(53, 53, 116);
+}
+#fifth a:nth-of-type(3) {
+color: rgb(206, 3, 3);
+}
+
+#footer {
+    background-color: rgb(41, 41, 41);
+    color: grey;
+    padding:20px;
+}
+
+#footer a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+#footer a:hover {
+    color: white;
+}
